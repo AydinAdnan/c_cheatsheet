@@ -351,7 +351,7 @@ struct Packed {
 
 ### 4.3 Unions
 
-All members share the same memory location. Size = size of largest member.
+All members share the same memory location. Size = size of largest member.  in C is how their members are stored in memory. A structure allocates unique memory for each member, allowing all of them to be accessed simultaneously. A union, in contrast, allocates a single, shared memory location for all its members, meaning only one member can hold a value at any given time. 
 
 ```c
 union Data {
